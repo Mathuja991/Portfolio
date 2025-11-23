@@ -1,0 +1,58 @@
+"use client";
+
+import { motion } from "framer-motion";
+import Image from "next/image";
+
+const About = () => {
+    return (
+        <section id="about" className="py-20 bg-dark-lighter/30">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5 }}
+                    className="grid md:grid-cols-2 gap-12 items-center"
+                >
+                    <div className="relative aspect-square max-w-md mx-auto md:mx-0">
+                        <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-2xl -rotate-6 opacity-20"></div>
+                        <div className="relative h-full w-full bg-dark-lighter rounded-2xl border border-gray-800 overflow-hidden flex items-center justify-center">
+                            {/* Placeholder for user image */}
+                            <span className="text-gray-600">Profile Image</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                            About <span className="text-primary">Me</span>
+                        </h2>
+                        <p className="text-gray-400 mb-6 leading-relaxed">
+                            I am a passionate developer with a keen eye for design and a drive for creating seamless user experiences.
+                            With expertise in modern web technologies, I specialize in building scalable applications that solve real-world problems.
+                        </p>
+                        <p className="text-gray-400 mb-8 leading-relaxed">
+                            My journey in tech has led me to work on diverse projects, from e-commerce platforms to interactive dashboards.
+                            I believe in clean code, continuous learning, and the power of collaboration.
+                        </p>
+
+                        <div className="grid grid-cols-2 gap-6">
+                            {[
+                                { label: "Experience", value: "3+ Years" },
+                                { label: "Projects", value: "50+" },
+                                { label: "Clients", value: "20+" },
+                                { label: "Coffee", value: "∞" },
+                            ].map((stat, index) => (
+                                <div key={index}>
+                                    <h4 className="text-2xl font-bold text-white mb-1">{stat.value}</h4>
+                                    <p className="text-sm text-gray-500">{stat.label}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </motion.div>
+            </div>
+        </section>
+    );
+};
+
+export default About;
