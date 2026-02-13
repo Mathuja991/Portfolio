@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Download } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
@@ -24,9 +24,10 @@ const Navbar = () => {
 
     const navLinks = [
         { name: "About", href: "#about" },
-        { name: "Projects", href: "#projects" },
         { name: "Skills", href: "#skills" },
-        { name: "Contact", href: "#contact" },
+        { name: "Projects", href: "#projects" },
+        { name: "Education", href: "#education" },
+        { name: "Contacts", href: "#contact" },
     ];
 
     return (
@@ -51,6 +52,12 @@ const Navbar = () => {
                                 {link.name}
                             </Link>
                         ))}
+                        <Link
+                            href="/cv"
+                            className="px-4 py-2 bg-primary hover:bg-blue-600 text-white rounded-full text-sm font-medium transition-all flex items-center gap-2"
+                        >
+                            Resume <Download size={16} />
+                        </Link>
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -85,6 +92,13 @@ const Navbar = () => {
                                     {link.name}
                                 </Link>
                             ))}
+                            <Link
+                                href="/cv"
+                                onClick={() => setIsOpen(false)}
+                                className="block px-3 py-2 text-base font-medium text-primary hover:bg-dark-lighter rounded-md transition-colors flex items-center gap-2"
+                            >
+                                Resume <Download size={16} />
+                            </Link>
                         </div>
                     </motion.div>
                 )}

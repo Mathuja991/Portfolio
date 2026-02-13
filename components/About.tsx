@@ -17,8 +17,12 @@ const About = () => {
                     <div className="relative aspect-square max-w-md mx-auto md:mx-0">
                         <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-2xl -rotate-6 opacity-20"></div>
                         <div className="relative h-full w-full bg-dark-lighter rounded-2xl border border-gray-800 overflow-hidden flex items-center justify-center">
-                            {/* Placeholder for user image */}
-                            <span className="text-gray-600">Profile Image</span>
+                            <Image
+                                src="/profile.jpg"
+                                alt="Profile Image"
+                                fill
+                                className="object-cover"
+                            />
                         </div>
                     </div>
 
@@ -31,16 +35,16 @@ const About = () => {
                             With expertise in modern web technologies, I specialize in building scalable applications that solve real-world problems.
                         </p>
                         <p className="text-gray-400 mb-8 leading-relaxed">
-                            My journey in tech has led me to work on diverse projects, from e-commerce platforms to interactive dashboards.
+                            My journey in tech has led me to work on diverse projects, from web applications to interactive dashboards.
                             I believe in clean code, continuous learning, and the power of collaboration.
                         </p>
 
                         <div className="grid grid-cols-2 gap-6">
                             {[
-                                { label: "Experience", value: "3+ Years" },
-                                { label: "Projects", value: "50+" },
-                                { label: "Clients", value: "20+" },
-                                { label: "Coffee", value: "∞" },
+                                // { label: "Experience", value: "3+ Years" },
+                                { label: "Projects", value: "3+" },
+                                { label: "Clients", value: "1" },
+
                             ].map((stat, index) => (
                                 <div key={index}>
                                     <h4 className="text-2xl font-bold text-white mb-1">{stat.value}</h4>

@@ -20,14 +20,14 @@ const Hero = () => {
                     transition={{ duration: 0.5 }}
                 >
                     <h2 className="text-primary font-semibold tracking-wide uppercase mb-4">
-                        Full Stack Developer
+                        Hi, I&apos;m Mathuja
                     </h2>
                     <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
-                        Building Digital <br /> Experiences
+                        AI Engineer
                     </h1>
                     <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-                        I craft beautiful, high-performance websites and applications with modern technologies.
-                        Let's turn your vision into reality.
+                        Machine learning and deep learning practitioner focused on building robust ML systems.
+                        I work on model development, preprocessing biomedical time-series (EEG/ECG), and end-to-end ML pipelines.
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
@@ -46,23 +46,23 @@ const Hero = () => {
                         </Link>
                     </div>
 
-                   <div className="flex items-center justify-center gap-6">
-    {[
-        { icon: Github, href: "https://github.com/Mathuja991" },
-        { icon: Linkedin, href: "https://www.linkedin.com/in/Mathuja991/" },
-        { icon: Mail, href: "mailto:mathujaparameshwaran@gmail.com" }, // also fix mail
-    ].map((social, index) => (
-        <a
-            key={index}
-            href={social.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-3 bg-dark-lighter rounded-full text-gray-400 hover:text-white hover:bg-primary/20 transition-all"
-        >
-            <social.icon size={20} />
-        </a>
-    ))}
-</div>
+                    <div className="flex items-center justify-center gap-6">
+                        {[
+                            { icon: Github, href: "https://github.com/Mathuja991" },
+                            { icon: Linkedin, href: "https://www.linkedin.com/in/Mathuja991/" },
+                            { icon: Mail, href: "mailto:mathujaparameshwaran@gmail.com" }, // also fix mail
+                        ].map((social, index) => (
+                            <a
+                                key={index}
+                                href={social.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="p-3 bg-dark-lighter rounded-full text-gray-400 hover:text-white hover:bg-primary/20 transition-all"
+                            >
+                                <social.icon size={20} />
+                            </a>
+                        ))}
+                    </div>
 
                 </motion.div>
             </div>
