@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mathuja Parameshwaran | AI Engineer",
-  description: "Portfolio of Mathuja Parameshwaran, an AI Engineer focused on machine learning, deep learning, and biomedical signal processing.",
+  title: "Mathuja Parameshwaran | Software Engineer",
+  description: "Portfolio of Mathuja Parameshwaran, a Software Engineer focused on building reliable, scalable software solutions.",
 };
 
 export default function RootLayout({

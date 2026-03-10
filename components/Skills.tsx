@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 
 const skills = [
+    { category: "Programming", items: ["Java", "Python", "JavaScript", "TypeScript"] },
     { category: "Frontend", items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"] },
     { category: "Backend", items: ["Node.js", "Express", "PostgreSQL", "MongoDB", "Prisma"] },
     { category: "Tools", items: ["Git", "Docker", "AWS", "Vercel", "Figma"] },
@@ -27,7 +28,7 @@ const Skills = () => {
                     </p>
                 </motion.div>
 
-                <div className="grid md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">
                     {skills.map((skillGroup, index) => (
                         <motion.div
                             key={index}
@@ -35,7 +36,7 @@ const Skills = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="bg-dark p-8 rounded-2xl border border-gray-800 hover:border-primary/30 transition-colors"
+                            className="bg-dark p-8 rounded-2xl border border-gray-800 hover:border-primary/30 transition-colors h-full"
                         >
                             <h3 className="text-xl font-bold mb-6 text-center text-secondary">
                                 {skillGroup.category}

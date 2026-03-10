@@ -23,11 +23,11 @@ const Hero = () => {
                         Hi, I&apos;m Mathuja
                     </h2>
                     <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
-                        AI Engineer
+                        Software Engineer
                     </h1>
                     <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-                        Machine learning and deep learning practitioner focused on building robust ML systems.
-                        I work on model development, preprocessing biomedical time-series (EEG/ECG), and end-to-end ML pipelines.
+                        Software engineer focused on building reliable, scalable applications.
+                        I work on full-stack development, clean architecture, and delivering end-to-end solutions.
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">

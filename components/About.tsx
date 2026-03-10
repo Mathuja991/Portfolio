@@ -31,13 +31,13 @@ const About = () => {
                             About <span className="text-primary">Me</span>
                         </h2>
                         <p className="text-gray-400 mb-6 leading-relaxed">
-                            I am a passionate AI and Machine Learning enthusiast with a strong foundation in deep learning, data analysis, and intelligent system design.
-                            I enjoy building data-driven solutions that transform complex information into meaningful insights and real-world impact.
+                            I am a passionate software engineering enthusiast with a strong foundation in application development, problem solving, and system design.
+                            I enjoy building reliable software solutions that turn ideas into practical products with real-world impact.
                             </p>
 
                         <p className="text-gray-400 mb-8 leading-relaxed">
-                            My journey in tech has led me to work on projects involving EEG signal analysis, ECG classification, and predictive modeling.
-                            I believe in clean experimentation, continuous learning, and leveraging AI to solve challenging real-world problems.
+                            My journey in tech has led me to work on projects involving web development, data processing, and scalable application workflows.
+                            I believe in clean architecture, continuous learning, and writing maintainable code to solve challenging real-world problems.
                         </p>
 
 
